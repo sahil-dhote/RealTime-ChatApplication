@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Hello </title>
+        <!--We are using below script to establish connection between client and server i.e index.js and client.js-->
+        <!--Its given in documentation that standalone build of client is exposed by server at "/socket.io/socket.io.js" -->
+        <!--And this is reason we are adding connection script first and then client.js-->
+        <script defer src='http://localhost:5000/socket.io/socket.io.js'></script> 
+        <script defer src="../Backend/client.js"></script> <!--So defer we are adding here so that it will let everything get loads first and then this file will get load-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Hi </h1>
+
+        <div class = "container" id="itsContainer"> 
+            <div class="message right">Sunil: How are you</div>
+            <div class="message left">Anil: Fine bro</div>
+        </div>
+
+        <div class = "send">
+            <form action="#" id="sendMsg">
+                <input type="text" name="message" id="messageinp">
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+
+    </body>
+</html>

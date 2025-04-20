@@ -1,0 +1,7 @@
+.our-msg{
+    @apply bg-blue-500 text-white rounded-lg p-3 max-w-xs self-end
+}
+
+.user-msg{
+    @apply bg-gray-300 text-gray-800 rounded-lg p-3 max-w-xs self-start
+}

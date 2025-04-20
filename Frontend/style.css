@@ -1,0 +1,32 @@
+.container{
+    max-width: 1000px;
+    height:60vh;
+    background-color: aqua;
+    margin: auto; /*For center*/
+
+}
+
+.message{
+    background-color: blueviolet;
+    width: 24%;
+    margin: 15px;
+    padding: 12px;
+    border: 3px solid black;
+    border-radius: 10px; /* To give curves to border*/
+}
+
+.left{
+    float: left;
+    clear:both; /* to make sure both should not come in same line */
+
+}
+
+.right{
+    float: right;
+    clear: both; /* same as above*/
+
+}
+
+.send{
+    text-align: center;
+}
